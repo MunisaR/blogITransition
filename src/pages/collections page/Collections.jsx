@@ -13,7 +13,9 @@ import { baseURL } from "../../extras/constants";
 
 export function Collections() {
   const [collectionList, setCollectionList] = useState("");
-  const id = JSON.parse(localStorage.getItem("userObject"));
+  const id = localStorage.getItem("userObject")
+    ? JSON.parse(localStorage.getItem("userObject"))
+    : "";
   const [content, setContent] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [searchTag, setSearchTag] = useState("");
