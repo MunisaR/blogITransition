@@ -1,0 +1,45 @@
+:root {
+    --background: #fff;
+    --primary: #000;
+}
+
+[data-theme='light'] {
+    --background: #fff;
+    --primary: #000;
+}
+
+[data-theme='dark'] {
+    --background: #282c34;
+    --primary: #fff;
+}
+
+
+body {
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+table > *{
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+td > *{
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+
+.goog-te-combo{
+padding: 8px;
+}
+
+#google_translate_element>div>span{
+   margin: 0;
+}
+
+.skiptranslate:nth-child(3){
+    display: none;
+}
+
+
