@@ -73,7 +73,7 @@ const CustomCollectionItem = ({
           role={"button"}
           onClick={() => {
             setFav(!fav);
-            const res = confirm(
+            const res = window.confirm(
               "Are you sure you want to remove this from your favorites?"
             );
 
