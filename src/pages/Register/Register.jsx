@@ -170,6 +170,10 @@ function Registration() {
               await axios
                 .post(baseURL + "/create_user", { user })
                 .then((response) => {
+                  localStorage.setItem(
+                    "userObject",
+                    JSON.stringify(response.data.newUser)
+                  );
                   if (response.status === 200) {
                     localStorage.setItem(
                       "userObject",
